@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <upload></upload>
+    <!-- 组件渲染的位置 -->
+    <div></div>
+    <router-view id="test"></router-view>
   </div>
 </template>
 
@@ -20,5 +23,8 @@ export default {
   justify-content: center;
   overflow: hidden;
   /* align-items: center; */
+}
+#test{
+  background-color: red;
 }
 </style>
