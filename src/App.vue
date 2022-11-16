@@ -2,7 +2,6 @@
   <div id="app">
     <upload></upload>
   </div>
-  <!-- <upload></upload> -->
 </template>
 
 <script>
