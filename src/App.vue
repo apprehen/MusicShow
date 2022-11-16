@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <upload></upload>
   </div>
+  <!-- <upload></upload> -->
 </template>
 
 <script>
+import upload from '@/components/upload.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: { upload }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  /* align-items: center; */
 }
 </style>
